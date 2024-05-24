@@ -1,72 +1,219 @@
-/* Estilizando o cabeçalho */
+/* index.css */
+
+/* Estilo existente */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.content {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  overflow: hidden; /* Para conter as floats */
+  background-color: white; /* Fundo branco para se destacar */
+  border-radius: 5px; /* Cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.topic-box {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px);
+  float: left;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.topic-box:nth-child(2n) {
+  margin-right: 0;
+}
+
+.topic-box h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.topic-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.topic-box a {
+  display: inline-block;
+  background-color: #2f9e41;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.topic-box a:hover {
+  background-color: #247d35;
+}
+
 header {
-    background-color: #2f9e41;
-    padding: 10px;
-    display: flexbox;
-  }
-  
-  img {
-    width: 65px;
+  background-color: #2f9e41;
+  padding: 20px;
+  text-align: center;
+}
 
-    } 
+header img {
+  width: 100px;
+  height: auto;
+}
 
-  div {
-    font-size: 30px;
-    font-weight: bold;
+header div {
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-fixed {
+  position: sticky;
+  top: 0;
+  background-color: #2f9e41;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2f9e41;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  clear: both; /* Para limpar floats */
+}
+
+footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topic-box {
+    width: 100%;
+    margin-right: 0;
   }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 80px;
   }
-  
+
+  header div {
+    font-size: 16px;
+  }
+
   nav ul li {
-    display: inline;
-    margin-right: 10px;
-    font-size: 14px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  /* Estilizando as seções */
-  section {
-    padding: 20px;
-  }
-  
-  article {
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
+    display: block;
     margin-bottom: 10px;
   }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  ul li {
-    margin-bottom: 5px;
-  }
-  
-  /* Estilizando o rodapé */
-  footer {
-    background-color: none;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  address {
-    margin-top: 10px;
-  }
-  
-  address a {
-    text-decoration: none;
-    color: #0130ff;
-  }
-  
+}
+
+/* Novos estilos para as listas de exercícios */
+.materials {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.materials-title {
+  text-align: center;
+  color: #2f9e41;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.materials-description {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.toggle-button {
+  display: block;
+  background-color: #2f9e41;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.toggle-button:hover {
+  background-color: #247d35;
+}
+
+.materials-list {
+  list-style: none;
+  padding: 0;
+  display: none; /* Inicialmente oculto */
+}
+
+.materials-list li {
+  margin-bottom: 10px;
+}
+
+.materials-list li a {
+  display: inline-block;
+  color: #2f9e41;
+  text-decoration: none;
+  border: 2px solid #2f9e41;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.materials-list li a:hover {
+  background-color: #2f9e41;
+  color: #fff;
+}

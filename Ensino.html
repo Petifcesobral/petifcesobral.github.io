@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>PET IFCE Sobral</title>
+</head>
+<body>
+    <header>
+        <img src="assets/pet-logo-1.png" alt="Logo PET IFCE">
+        <div>Programa de Educação Tutorial (PET) IFCE SOBRAL</div>
+        <nav class="nav-fixed">
+            <ul>
+                <li><a href="https://petifcesobral.github.io/">Página Inicial</a></li>
+                <li><a href="Atividades.html">Atividades</a></li>
+                <li><a href="grupoPET.html">Grupo PET</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <div class="materials">
+            <h2 class="materials-title">Mecânica Básica I</h2>
+            <p class="materials-description">Nesta seção, estão disponíveis listas de exercícios elaboradas pelo grupo PET IFCE Sobral. Estas listas visam ajudar os estudantes a praticar e aprofundar seus conhecimentos em Mecânica Básica.</p>
+            <button class="toggle-button" onclick="toggleMaterials(this)">Exibir Listas</button>
+            <ul class="materials-list">
+                <li><a href="Atividades/Ensino/Mecânica_Básica_I/Lista_1.pdf" download>Vetores e Movimento Unidimensional</a></li>
+                <li><a href="#" download>Lista de Exercícios 2</a></li>
+                <li><a href="#" download>Lista de Exercícios 3</a></li>
+            </ul>
+        </div>
+        <div class="materials">
+            <h2 class="materials-title">Cálculo: Funções</h2>
+            <p class="materials-description">Nesta seção, estão disponíveis listas de exercícios elaboradas pelo grupo PET IFCE Sobral para a disciplina de Cálculo com foco em funções. Estas listas visam ajudar os estudantes a praticar e aprofundar seus conhecimentos em funções matemáticas.</p>
+            <button class="toggle-button" onclick="toggleMaterials(this)">Exibir Listas</button>
+            <ul class="materials-list">
+                <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_1.pdf" download>Definição de Função</a></li>
+                <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_2.pdf" download>Função Trigonométrica</a></li>
+                <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_3.pdf" download>Funções Exponenciais e Logarítmicas</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Bem-vindo ao site oficial do PET - IFCE campus Sobral</p>
+        <address>
+            contato: <a href="mailto:petifcesobral@gmail.com">e-mail</a>
+        </address>
+    </footer>
+
+    <script>
+        function toggleMaterials(button) {
+            const materialsList = button.nextElementSibling;
+            if (materialsList.style.display === 'none' || materialsList.style.display === '') {
+                materialsList.style.display = 'block';
+                button.textContent = 'Ocultar Listas';
+            } else {
+                materialsList.style.display = 'none';
+                button.textContent = 'Exibir Listas';
+            }
+        }
+    </script>
+</body>
+</html>
