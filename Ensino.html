@@ -3,50 +3,71 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="kQ9ZcXZEmkkDdNIgM3xBP0KK_DdIOIDGmbRtS3PRUgo">
     <link rel="stylesheet" href="index.css">
     <title>PET IFCE Sobral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <img src="assets/pet-logo-1.png" alt="Logo PET IFCE">
-        <div>Programa de Educação Tutorial (PET) IFCE SOBRAL</div>
-        <nav class="nav-fixed">
-            <ul>
-                <li><a href="https://petifcesobral.github.io/">Página Inicial</a></li>
-                <li><a href="Atividades.html">Atividades</a></li>
-                <li><a href="grupoPET.html">Grupo PET</a></li>
-            </ul>
-        </nav>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img id="logo" src="assets/pet-logo-1.png" alt="PET IFCE Sobral" class="img-fluid" style="margin-left: 50px;">
+                        <span style="color: white; margin-left: 20px;">PET IFCE Sobral</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav" style="margin-right: 30px;">
+                            <a class="nav-item nav-link" href="index.html #pagina-inicial">Home</a>
+                            <a class="nav-item nav-link" href="index.html #atividades">Atividades</a>
+                            <a class="nav-item nav-link" href="index.html #grupo-pet">Grupo PET</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <section class="content">
-        <div class="materials">
-            <h2 class="materials-title">Mecânica Básica I</h2>
-            <p class="materials-description">Nesta seção, estão disponíveis listas de exercícios elaboradas pelo grupo PET IFCE Sobral. Estas listas visam ajudar os estudantes a praticar e aprofundar seus conhecimentos em Mecânica Básica.</p>
-            <button class="toggle-button" onclick="toggleMaterials(this)">Exibir Listas</button>
-            <ul class="materials-list">
-                <li><a href="Atividades/Ensino/Mecânica_Básica_I/Lista_1.pdf" download>Vetores e Movimento Unidimensional</a></li>
-                <li><a href="Atividades/Ensino/Mecânica_Básica_I/Lista_2.pdf" download>Força e Movimento I e II</a></li>
-                <li><a href="#" downloa>Lista de Exercícios 3</a></li>
-            </ul>
+    <br><br>
+
+    <div class="row">
+        <div class="col">
+            <div class="materials">
+                <h2 class="materials-title">Mecânica Básica I</h2>
+                <p class="materials-description">Nesta seção, estão disponíveis listas de exercícios elaboradas pelo grupo PET IFCE Sobral. Estas listas visam ajudar os estudantes a praticar e aprofundar seus conhecimentos em Mecânica Básica.</p>
+                <button class="toggle-button" onclick="toggleMaterials(this)">Exibir Listas</button>
+                <ul class="materials-list">
+                    <li><a href="Atividades/Ensino/Mecânica_Básica_I/Lista_1.pdf" download>Vetores e Movimento Unidimensional</a></li>
+                    <li><a href="Atividades/Ensino/Mecânica_Básica_I/Lista_2.pdf" download>Força e Movimento I e II</a></li>
+                    <li><a href="#" downloa>Lista de Exercícios 3</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="materials">
-            <h2 class="materials-title">Cálculo: Funções</h2>
-            <p class="materials-description">Nesta seção, estão disponíveis listas de exercícios elaboradas pelo grupo PET IFCE Sobral para a disciplina de Cálculo com foco em funções. Estas listas visam ajudar os estudantes a praticar e aprofundar seus conhecimentos em funções matemáticas.</p>
-            <button class="toggle-button" onclick="toggleMaterials(this)">Exibir Listas</button>
-            <ul class="materials-list">
-                <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_1.pdf" download>Definição de Função</a></li>
-                <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_2.pdf" download>Função Trigonométrica</a></li>
-                <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_3.pdf" download>Funções Exponenciais e Logarítmicas</a></li>
-            </ul>
+
+        <div class="col">
+            <div class="materials">
+                <h2 class="materials-title">Cálculo: Funções</h2>
+                <p class="materials-description">Nesta seção, estão disponíveis listas de exercícios elaboradas pelo grupo PET IFCE Sobral para a disciplina de Cálculo com foco em funções. Estas listas visam ajudar os estudantes a praticar e aprofundar seus conhecimentos em funções matemáticas.</p>
+                <button class="toggle-button" onclick="toggleMaterials(this)">Exibir Listas</button>
+                <ul class="materials-list">
+                    <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_1.pdf" download>Definição de Função</a></li>
+                    <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_2.pdf" download>Função Trigonométrica</a></li>
+                    <li><a href="Atividades/Ensino/Cálculo/Funções/Lista_3.pdf" download>Funções Exponenciais e Logarítmicas</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
-    
+    </div>
+
     <footer>
-        <p>Bem-vindo ao site oficial do PET - IFCE campus Sobral</p>
-        <address>
-            contato: <a href="mailto:petifcesobral@gmail.com">e-mail</a>
-        </address>
+      <div class="row">
+          <p>Bem-vindo ao site oficial do PET - IFCE campus Sobral</p>
+          <address>
+              contato: <a href="mailto:petifcesobral@gmail.com">e-mail</a>
+          </address>
+      </div>
     </footer>
 
     <script>
@@ -61,5 +82,9 @@
             }
         }
     </script>
+    
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
