@@ -34,9 +34,14 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: calc(50% - 20px);
+  height: 300px;
   float: left;
   margin-right: 20px;
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo uniformemente */
 }
 
 .topic-box:nth-child(2n) {
@@ -53,6 +58,7 @@ body {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
+  margin-bottom: auto; /* Garante que o parágrafo tenha espaço abaixo */
 }
 
 .topic-box a {
@@ -63,12 +69,13 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  list-style-type: none; /* Adiciona essa linha para remover o pontinho preto */
+  align-self: flex-end; /* Evita que o link se estenda pelo contêiner */
 }
 
 .topic-box a:hover {
   background-color: #247d35;
 }
+
 
 .member-list {
   list-style-type: none; /* Remove marcadores de lista para os links dentro da member-list */
@@ -150,28 +157,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #fff;
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #2f9e41;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  clear: both; /* Para limpar floats */
-}
-
-footer .footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
   text-decoration: underline;
 }
 
@@ -262,4 +247,152 @@ footer a:hover {
 .materials-list li a:hover {
   background-color: #2f9e41;
   color: #fff;
+}
+
+/* Card para o projeto ENEM*/
+
+.card {
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  height: auto;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-img {
+  opacity: 0.5;
+}
+
+.card-text, .card-title {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.card:hover .card-text, .card:hover .card-title {
+  color: white;
+}
+
+.card-img-overlay {
+  background-color: rgba(157, 154, 154, 0.111);
+  position: relative;
+}
+
+
+/* Esconder o texto inicialmente */
+.card-text, .card-title {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar o texto quando o card é hover */
+.card:hover .card-text, .card:hover .card-title {
+  opacity: 1;
+}
+#signup-btn {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+}
+
+.card:hover #signup-btn {
+  display: block;
+}
+/* Teste footer */
+footer {
+  background-color: #2f9e41;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  clear: both; /* Para limpar floats */
+}
+
+footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: white;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background-color 0.2s;
+  margin-right: 10px; /* Espaço entre os ícones */
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.instagram-icon .instagram {
+  fill: #cc39a4;
+}
+
+.instagram-icon:hover {
+  background-color: #cc39a4;
+}
+
+.instagram-icon:hover .instagram {
+  fill: white;
+}
+
+.gmail-icon .gmail {
+  fill: #f14336;
+}
+
+.gmail-icon:hover {
+  background-color: #FF0004;
+}
+
+.gmail-icon:hover .gmail {
+  fill: white;
+}
+
+.twitter-icon .twitter {
+  fill: black;
+}
+
+.twitter-icon:hover {
+  background-color: black;
+}
+
+.twitter-icon:hover .twitter {
+  fill: white;
+}
+
+
+
+/*info_enem*/
+
+#info_enem {
+  background-color: rgba(231, 223, 223, 0.773);
+  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
