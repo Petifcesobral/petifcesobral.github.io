@@ -1,0 +1,150 @@
+/* extensao.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Container principal */
+  .container {
+    padding: 50px 20px;
+  }
+  
+  /* Card do evento */
+  .card {
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* Imagem do card */
+  .card img {
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  /* Conteúdo do card */
+  .card-body {
+    padding: 20px;
+    opacity: 1;
+  }
+  
+  .card-body:hover{
+    display: block;
+    opacity: 1;
+  }
+
+  .card-title {
+    color: #2f9e41;
+    font-size: 24px;
+    opacity: 1;
+  }
+
+  .card-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+
+  .card-text:hover {
+    opacity: 1;
+    color: #555;
+  }
+
+  .card:hover .card-text, .card:hover .card-title {
+    opacity: 1;
+  }
+  
+  /* Botões */
+  .btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-success {
+    background-color: #2f9e41;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #247d35;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .card img {
+      border-radius: 15px 15px 0 0;
+    }
+  
+    .card-body {
+      padding: 20px;
+    }
+  }
+  
+  #material-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  #material-card h4 {
+    font-size: 24px;
+    color: #2f9e41;
+    margin-bottom: 15px;
+  }
+  
+  #material-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  #material-card a {
+    display: inline-block;
+    color: #2f9e41;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #2f9e41;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #material-card a:hover {
+    background-color: #2f9e41;
+    color: #fff;
+  }
+  

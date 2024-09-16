@@ -277,9 +277,7 @@ nav ul li a:hover {
   transition: color 0.3s, background-color 0.3s;
 }
 
-.card:hover .card-text, .card:hover .card-title {
-  color: white;
-}
+
 
 .card-img-overlay {
   background-color: rgba(157, 154, 154, 0.111);
@@ -290,7 +288,7 @@ nav ul li a:hover {
 /* Esconder o texto inicialmente */
 .card-text, .card-title {
   opacity: 0;
-  transition: opacity 0.3s;
+ 
 }
 
 /* Mostrar o texto quando o card é hover */
@@ -385,8 +383,6 @@ footer a:hover {
 .twitter-icon:hover .twitter {
   fill: white;
 }
-
-
 
 /*info_enem*/
 
