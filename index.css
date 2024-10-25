@@ -392,3 +392,61 @@ footer a:hover {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+/*Edital*/
+
+.news-card {
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-card .nav-tabs .nav-link {
+  color: #555;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.news-card .nav-tabs .nav-link.active {
+  background-color: #2f9e41;
+  color: #fff;
+}
+
+.news-card .card-title {
+  color: #2f9e41;
+}
+
+.news-card .btn-primary {
+  background-color: #2f9e41;
+  border: none;
+}
+
+.news-card .btn-primary:hover {
+  background-color: #247d35;
+}
+
+.news-card .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.news-card .btn-success:hover {
+  background-color: #218838;
+}
+
+/*Para que o body do card apareça sem interferir em outros códigos*/
+#noticia.tab-pane.fade.show.active {
+  opacity: 1;
+}
+
+#cardpet {
+  opacity: 1;
+}
+
+#cardpett {
+  opacity: 1;
+}
+
+
+
