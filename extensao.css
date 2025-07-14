@@ -1,150 +1,113 @@
-/* extensao.css */
+/* Container principal do projeto */
+.enem-project {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Container principal */
-  .container {
-    padding: 50px 20px;
-  }
-  
-  /* Card do evento */
-  .card {
-    border-radius: 15px;
-    background-color: white;
-    overflow: hidden;
-    max-width: 400px;
-    position: relative;
-    margin: auto;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
+/* Layout grid para desktop */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  /* Imagem do card */
-  .card img {
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
-    height: 100%;
-  }
-  
-  /* Conteúdo do card */
-  .card-body {
-    padding: 20px;
-    opacity: 1;
-  }
-  
-  .card-body:hover{
-    display: block;
-    opacity: 1;
-  }
+/* Seção da imagem */
+.project-image {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+}
 
-  .card-title {
-    color: #2f9e41;
-    font-size: 24px;
-    opacity: 1;
-  }
+.project-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
 
-  .card-text {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    opacity: 1;
-  }
+/* Seção de conteúdo */
+.project-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .card-text:hover {
-    opacity: 1;
-    color: #555;
-  }
+.project-title {
+  color: #2f9e41;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
 
-  .card:hover .card-text, .card:hover .card-title {
-    opacity: 1;
+.project-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Botões */
+.project-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-download {
+  background: #2f9e41;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-download:hover {
+  background: #247d35;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #2f9e41;
+  color: #2f9e41;
+}
+
+.btn-outline:hover {
+  background: #e8f5e9;
+  color: #2f9e41;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
   }
   
-  /* Botões */
-  .btn {
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  .project-image {
+    padding: 15px;
+    justify-content: center;
   }
   
-  .btn-success {
-    background-color: #2f9e41;
-    color: white;
+  .project-image img {
+    max-height: 300px;
   }
   
-  .btn-success:hover {
-    background-color: #247d35;
+  .project-actions {
+    flex-direction: column;
+    gap: 10px;
   }
   
-  .btn-info {
-    background-color: #17a2b8;
-    color: white;
+  .btn-download {
+    width: 100%;
+    justify-content: center;
   }
-  
-  .btn-info:hover {
-    background-color: #138496;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .card {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .card img {
-      border-radius: 15px 15px 0 0;
-    }
-  
-    .card-body {
-      padding: 20px;
-    }
-  }
-  
-  #material-card {
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    padding: 20px;
-    transition: all 0.3s ease;
-    margin-top: 20px;
-  }
-  
-  #material-card h4 {
-    font-size: 24px;
-    color: #2f9e41;
-    margin-bottom: 15px;
-  }
-  
-  #material-card p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  #material-card a {
-    display: inline-block;
-    color: #2f9e41;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid #2f9e41;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  #material-card a:hover {
-    background-color: #2f9e41;
-    color: #fff;
-  }
-  
+}

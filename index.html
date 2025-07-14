@@ -4,252 +4,272 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="kQ9ZcXZEmkkDdNIgM3xBP0KK_DdIOIDGmbRtS3PRUgo">
-    <link rel="stylesheet" href="index.css">
     <title>PET IFCE Sobral</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="assets/pet-logo-1.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/pet-logo-1.png" type="image/x-icon">
-
 </head>
 <body>
   <header>
-    <div class="container" id="nav-container">
-        <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">
-                    <img id="logo" src="assets/Logos/petlogo-branca.png" alt="PET IFCE Sobral" class="img-fluid" style="margin-left: 50px; width: auto; height: 50px;">
-                    <span style="color: white; margin-left: 20px;"></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav" style="margin-right: 30px;">
-                        <a class="nav-item nav-link" href="#pagina-inicial">Home</a>
-                        <a class="nav-item nav-link" href="#atividades">Atividades</a>
-                        <a class="nav-item nav-link" href="#grupo-pet">Grupo PET</a>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img id="logo" src="assets/Logos/petlogo-branca.png" alt="PET IFCE Sobral" class="img-fluid me-2" style="height: 50px;">
+          <span class="d-none d-md-inline">PET IFCE Sobral</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-links">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#atividades">Atividades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-pet">Sobre o PET</a></li>
+            <li class="nav-item"><a class="nav-link" href="membros.html">Membros</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Inicial -->
+    <section class="banner-section" id="inicio">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1 order-2">
+            <h1>Programa de Educação Tutorial</h1>
+            <p class="lead">Integrando ensino, pesquisa e extensão para uma formação acadêmica completa</p>
+            <div class="d-flex gap-3">
+              <a href="#atividades" class="btn btn-primary">Nossas Atividades</a>
+              <a href="#sobre-pet" class="btn btn-outline-light">Sobre o PET</a>
             </div>
-        </nav>
-    </div>
-</header>
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+            <div id="carouselDestaques" class="carousel slide shadow-lg" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="3"></button>
+              </div>
+              <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                  <img src="assets/i1.jpg" class="d-block w-100" alt="Atividade do PET">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/i2.jpg" class="d-block w-100" alt="Grupo PET">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/i3.jpg" class="d-block w-100" alt="Evento PET">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/i4.jpg" class="d-block w-100" alt="Projeto PET">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<br><br>
-
-      <div class="card text-center news-card">
+    <!-- Card de Notícias -->
+    <section class="container my-5">
+      <div class="card news-card shadow">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="true" href="#noticia" data-bs-toggle="tab">Seleção PET</a>
+              <a class="nav-link active" href="#noticia" data-bs-toggle="tab">Seleção PET</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#edital" data-bs-toggle="tab">Baixar Edital</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#inscricoes" data-bs-toggle="tab">Inscrições</a>
+              <a class="nav-link" href="#" data-bs-toggle="tab">Inscrições</a>
             </li>
           </ul>
         </div>
         <div class="card-body tab-content">
-          <!-- Aba Início da Notícia -->
           <div id="noticia" class="tab-pane fade show active">
-            <h5 id="cardpett" class="card-title">NOVIDADES!!!</h5>
-            <p id="cardpet" class="card-text">
+            <h5 class="card-title">NOVIDADES!!!</h5>
+            <p class="card-text">
               O Edital para o Programa de Ensino Tutorial (PET) já está disponível. As inscrições ocorrerão de 28 de outubro a 8 de novembro de 2024.
               Serão 8 vagas no total, distribuídas nas áreas de Astronomia, Física Computacional e Eletromagnetismo. O estudante bolsista do PET
               desenvolverá atividades de ensino, pesquisa e extensão.
             </p>
           </div>
-          <!-- Aba Acessar Edital -->
           <div id="edital" class="tab-pane fade">
-            <h5 id="cardpett" class="card-title">Baixe o Edital</h5>
-            <p id="cardpett" class="card-text">
+            <h5 class="card-title">Baixe o Edital</h5>
+            <p class="card-text">
               Acesse o edital completo para ver os requisitos, datas e demais informações essenciais.
             </p>
             <a href="assets/Edital2024/Edital Nº 01_2024_PET.pdf" class="btn btn-primary" download>Download do Edital</a>
           </div>
-          <!-- Aba Inscrições -->
           <div id="inscricoes" class="tab-pane fade">
-            <h5 id="cardpet" class="card-title">Inscrições</h5>
-            <p id="cardpett" class="card-text">Clique abaixo para se inscrever no processo seletivo.</p>
+            <h5 class="card-title">Inscrições</h5>
+            <p class="card-text">Clique abaixo para se inscrever no processo seletivo.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZg8ZEDUlEmb51Sibg7Pos_IOvRNPBWRF_6r0-quPFiCohPA/viewform" class="btn btn-success">Acessar Inscrições</a>
           </div>
         </div>
       </div>
+    </section>
 
-    <br>
-
-    <div class="container" id="pagina-inicial">
-        <div class="row">
-            <div class="col-lg-6 mr-auto mb-5">
-                <div class="mb-6">
-                    <h3 class="section-title" style="color: #2f9e41;">Bem-vindo ao PET IFCE Sobral</h3>
-                    <p>O Programa de Educação Tutorial (PET) é uma iniciativa que visa promover a formação acadêmica integral dos estudantes, articulando ensino, pesquisa e extensão. No PET IFCE Sobral, trabalhamos para oferecer uma experiência enriquecedora aos nossos membros, contribuindo para o desenvolvimento pessoal e profissional.</p>
-                    <h4 style="color: #2f9e41;">Nossa Equipe</h4>
-                    <p>Atualmente, o PET IFCE Sobral é composto por 8 membros dedicados, distribuídos nas áreas de pesquisa em astronomia, eletromagnetismo aplicado e análise de dados. Sob a orientação de um professor tutor, estamos engajados em projetos de pesquisa significativos nessas áreas, buscando contribuir para o avanço do conhecimento científico.
-                        <br><br>
-                         Além das nossas atividades de pesquisa, também assumimos responsabilidades importantes em iniciativas de ensino e extensão, compartilhando nosso conhecimento com a comunidade acadêmica e além dela.
-                         <br><br>
-                         Conheça nossa equipe clicando no link ao lado.
-                         <a href="membros.html" class="btn btn-success">Membros</a>
-                        </div>
-            </div>
-
-            <div class="col-lg-6">
-                <!--Painel de controle-->
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <!--Conteúdo do carrosel-->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="assets/i1.jpg" class="d-block w-100" alt="Imagem">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/i2.jpg" class="d-block w-100" alt="imagemm">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/i3.jpg" class="d-block w-100" alt="imagemmm">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/i4.jpg" class="d-block w-100" alt="imagemmmm">
-                      </div>
-                    </div>
-                    <!--Botões-->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Proximo</span>
-                    </button>
-                  </div>
-            
-            
+    <!-- Seção Sobre Nós -->
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">Bem-vindo ao PET IFCE Sobral</h2>
+          <p>O Programa de Educação Tutorial (PET) é uma iniciativa que visa promover a formação acadêmica integral dos estudantes, articulando ensino, pesquisa e extensão. No PET IFCE Sobral, trabalhamos para oferecer uma experiência enriquecedora aos nossos membros, contribuindo para o desenvolvimento pessoal e profissional.</p>
+          
+          <h3 class="mt-4">Nossa Equipe</h3>
+          <p>Atualmente, o PET IFCE Sobral é composto por 8 membros dedicados, distribuídos nas áreas de pesquisa em astronomia, eletromagnetismo aplicado e análise de dados. Sob a orientação de um professor tutor, estamos engajados em projetos de pesquisa significativos nessas áreas, buscando contribuir para o avanço do conhecimento científico.</p>
+          
+          <a href="membros.html" class="btn btn-primary mt-3">Conheça nossa equipe</a>
         </div>
-    </div>
-        </div>
-    </div>
-
-
-    <div class="container" id="atividades">
-      <div class="row">
-        <h3 style="color: #2f9e41; padding-bottom: 10px;">Atividades</h3>
-        <P>Bem-vindo à seção dedicada às atividades do grupo PET IFCE Sobral. Aqui, você encontrará uma variedade de iniciativas nas áreas de Ensino, Pesquisa e Extensão. Explore recursos educacionais, projetos de pesquisa e atividades de extensão que fortalecem a conexão entre a academia e a sociedade. Clique em "Saiba Mais" para obter mais detalhes sobre cada uma dessas áreas.</P>
-        
-        <div class="col-lg-4 mr-auto mb-5">
-          <div class="topic-box" style="width: auto;">
-            <h2>Ensino</h2>
-              <p>Nesta seção, você encontrará materiais de apoio relacionados às atividades de ensino do PET IFCE Sobral.</p>
-              <a href="Ensino.html" style="float: inline-end;">Saiba Mais</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mr-auto mb-5">
-          <div class="topic-box" style="width: auto;">
-            <h2>Pesquisa</h2>
-            <p>Aqui você terá acesso a informações sobre projetos de pesquisa realizados pelo grupo PET IFCE Sobral.</p>
-            <a href="pesquisa.html" style="float: inline-end;">Saiba Mais</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mr-auto mb-5">
-          <div class="topic-box" style="width: auto;">
-            <h2>Extensão</h2>
-            <p>Nesta seção, você encontrará informações sobre as atividades de extensão desenvolvidas pelo grupo PET IFCE Sobral, incluindo projetos com a comunidade.</p>
-            <a href="extensao.html" style="float: inline-end;">Saiba Mais</a>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe class="rounded shadow" src="https://www.youtube.com/watch?v=vtc7Mxuwfao&t=3s" title="Sobre o PET IFCE Sobral" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container" id="grupo-pet">
-      <div class="row">
-        <h3 style="color: #2f9e41; padding-bottom: 10px;">O que é o grupo PET?</h3>
-        <p>O Programa de Educação Tutorial (PET) é desenvolvido por grupos de estudantes, com tutoria de um docente, organizados a partir de formações em nível de graduação nas Instituições de Ensino Superior do País orientados pelo princípio da indissociabilidade entre ensino, pesquisa e extensão e da educação tutorial.</p>
-
-        <div class="col-lg-4 mr-auto mb-5">
-          <div class="topic-box" style="width: auto;">
-            <h2>Ensino</h2>
-            <p>O pilar do ensino no PET visa aprimorar a formação acadêmica dos estudantes através de atividades que complementam a grade curricular, promovendo uma maior integração entre teoria e prática. Isso inclui a realização de palestras, minicursos, workshops e a criação de materiais didáticos.</p>
-          </div>
+    <!-- Seção Atividades -->
+    <section class="py-5 bg-light" id="atividades">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Nossas Atividades</h2>
+          <p class="section-subtitle">Explore nossas iniciativas nas áreas de Ensino, Pesquisa e Extensão</p>
         </div>
-
-        <div class="col-lg-4 mr-auto mb-5">
-          <div class="topic-box" style="width: auto;">
-            <h2>Pesquisa</h2>
-            <p>No pilar da pesquisa, o PET incentiva os estudantes a se envolverem em projetos de investigação científica, estimulando a curiosidade e a busca por soluções inovadoras para problemas relevantes. Os alunos aprendem a desenvolver metodologias científicas, coletar e analisar dados, além de divulgar os resultados em congressos e publicações acadêmicas.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mr-auto mb-5">
-          <div class="topic-box" style="width: auto;">
-            <h2>Extensão</h2>
-            <p>O pilar da extensão visa levar o conhecimento produzido na universidade para a comunidade externa, promovendo a interação entre o meio acadêmico e a sociedade. As atividades de extensão podem incluir projetos sociais, eventos culturais, ações comunitárias e parcerias com escolas e outras instituições.</p>
-          </div>
-        </div>
-
         
-      </div>
-    </div>
-
-    <footer>
-      <h5 style="padding-bottom: 10px;">Bem vindo ao site oficial do PET IFCE-Sobral</h5>
-      <div class="row">
-          <div class="col-lg-4">
-              <h6 style="padding-bottom: 10px;">Navegar</h6>
-              <a href="index.html#pagina-inicial">Home</a>
-              <br>
-              <a href="index.html#atividades">Atividades</a>
-              <br>
-              <a href="index.html#grupo-pet">Grupo PET</a>
-          </div>
-
-          <div class="col-lg-4">
-              <h6 style="padding-bottom: 10px;">Informações</h6>
-              <a href="membros.html">Membros</a>
-              <br>
-              <a  href="https://ifce.edu.br/sobral/campus-sobral/cursos/superiores/licenciatura/fisica">Física Sobral</a>
-              <br>
-              <a  href="http://portal.mec.gov.br/pet">PET</a>
-          </div>
-
-          <div class="col-lg-4 d-flex justify-content-end">
-              <div class="footer-content">
-                  <h6 style="padding-bottom: 10px;">Contatos</h6>
-                  <a href="https://www.instagram.com/petfisicaifce?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="icon instagram-icon text-white me-3">
-                      <svg class="instagram" fill-rule="nonzero" height="30px" width="30px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                          <g transform="scale(8,8)">
-                              <path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path>
-                          </g>
-                      </svg>
-                  </a>
-                  <a href="mailto:petifcesobral@gmail.com" target="_blank" class="icon gmail-icon text-white me-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="30px" width="30px" class="gmail">
-                          <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"></path>
-                      </svg>
-                  </a>
-                  <a href="https://x.com/pet_fisica" target="_blank" class="icon twitter-icon text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="30px" width="30px" class="twitter">
-                          <path d="M23 2.999a10.055 10.055 0 0 1-2.887.791A5.075 5.075 0 0 0 22.337 1.3c-1.013.602-2.136 1.041-3.331 1.276A5.015 5.015 0 0 0 16.115 1c-2.774 0-5.029 2.277-5.029 5.092 0 .401.044.791.131 1.165A14.257 14.257 0 0 1 1.671 2.633a5.117 5.117 0 0 0-.684 2.56c0 1.768.879 3.329 2.214 4.248A4.976 4.976 0 0 1 .96 8.348v.065c0 2.462 1.733 4.508 4.038 4.973-.427.119-.875.18-1.338.18-.328 0-.643-.032-.955-.092.644 2.033 2.509 3.515 4.719 3.556A10.074 10.074 0 0 1 0 20.53a14.285 14.285 0 0 0 7.688 2.287c9.236 0 14.292-7.759 14.292-14.487 0-.22-.004-.44-.013-.66A10.261 10.261 0 0 0 23 2.999z"></path>
-                      </svg>
-                  </a>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="activity-card">
+              <div class="card-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
               </div>
+              <h3>Ensino</h3>
+              <p>Materiais de apoio e atividades complementares para enriquecer a formação acadêmica.</p>
+              <a href="Ensino.html" class="btn btn-outline-primary">Saiba Mais</a>
+            </div>
           </div>
           
+          <div class="col-md-4">
+            <div class="activity-card">
+              <div class="card-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h3>Pesquisa</h3>
+              <p>Projetos inovadores que contribuem para o avanço do conhecimento científico.</p>
+              <a href="pesquisa.html" class="btn btn-outline-primary">Saiba Mais</a>
+            </div>
+          </div>
           
+          <div class="col-md-4">
+            <div class="activity-card">
+              <div class="card-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3>Extensão</h3>
+              <p>Atividades que integram a universidade com a comunidade e promovem transformação social.</p>
+              <a href="extensao.html" class="btn btn-outline-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre o PET -->
+    <section class="py-5" id="sobre-pet">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">O que é o grupo PET?</h2>
+          <p class="section-subtitle">Conheça os pilares que fundamentam nosso trabalho</p>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="pet-pillar">
+              <div class="pillar-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <h3>Ensino</h3>
+              <p>O pilar do ensino no PET visa aprimorar a formação acadêmica dos estudantes através de atividades que complementam a grade curricular, promovendo uma maior integração entre teoria e prática.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="pet-pillar">
+              <div class="pillar-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <h3>Pesquisa</h3>
+              <p>No pilar da pesquisa, o PET incentiva os estudantes a se envolverem em projetos de investigação científica, estimulando a curiosidade e a busca por soluções inovadoras para problemas relevantes.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="pet-pillar">
+              <div class="pillar-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Extensão</h3>
+              <p>O pilar da extensão visa levar o conhecimento produzido na universidade para a comunidade externa, promovendo a interação entre o meio acadêmico e a sociedade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5>PET IFCE-Sobral</h5>
+          <p>Programa de Educação Tutorial do Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Campus Sobral</p>
+        </div>
+        
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5>Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#atividades">Atividades</a></li>
+            <li><a href="#sobre-pet">Sobre o PET</a></li>
+            <li><a href="membros.html">Membros</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5>Contatos</h5>
+          <div class="social-links">
+            <a href="https://www.instagram.com/petfisicaifce" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:petifcesobral@gmail.com" target="_blank" class="social-icon">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://x.com/pet_fisica" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p class="mt-3">
+            <i class="fas fa-map-marker-alt me-2"></i> IFCE Campus Sobral<br>
+            <i class="fas fa-phone me-2"></i> (88) 99999-9999
+          </p>
+        </div>
       </div>
       
-    </footer>
-    
-    <!-- Bootstrap JS e Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <hr class="mt-4">
+      
+      <div class="text-center">
+        <p class="mb-0">© 2024 PET IFCE-Sobral. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
